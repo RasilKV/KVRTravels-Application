@@ -1,0 +1,9 @@
+.state-logo{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.state-logo>img{
+  height: 100px;
+  width: 100px;
+}

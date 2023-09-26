@@ -1,0 +1,32 @@
+.navbar{
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+#kvr{
+  color: rgb(150, 2, 2);
+}
+#travels{
+  color: rgb(201, 3, 3);
+}
+.options>a{
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0px 5px;
+  color: black;
+}
+#mui1,#mui2,#mui3{
+  position: relative;
+  top: 5px;
+}
+#mui1{
+  color: blue;
+}
+#mui2{
+  color: green;
+}
+#mui3{
+  color: gray;
+}

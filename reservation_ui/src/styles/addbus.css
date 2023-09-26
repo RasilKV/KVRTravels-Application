@@ -1,0 +1,24 @@
+.add-bus{
+  box-shadow: 0px 0px 10px black;
+  padding: 20px 100px;
+  width: 20rem;
+  height: 25rem;
+  transform: translate(470px, 100px);
+  text-align: center;
+  border-radius: 10px;
+}
+.add-bus input{
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+  width: 18rem;
+  font-size: 15px;
+}
+.add-bus button{
+  border: none;
+  background-color: rgb(15, 241, 15);
+  width: 7rem;
+  height: 2rem;
+  border-radius: 6px;
+  color: black;
+}
