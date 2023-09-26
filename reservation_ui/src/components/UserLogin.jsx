@@ -19,17 +19,19 @@ const UserLogin = () => {
     e.preventDefault();
   }
   return (
-    <div className='user-login'>
-      <form action="">
-        <br />
-        <input type="email" placeholder='Enter your user email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-        <br /><br />
-        <input type="password" placeholder='Enter your password' value={password} onChange={(e)=>{setPassword(e.target.value)}} />
-        <br /><br />
-        <button id='user-login-btn' onClick={login}>Login</button>
-        <p>New user ? click here to <Link to={'/userregister'}>Register</Link></p>
-        <Link to={'/adminlogin'}>AdminLogin</Link>
-      </form>
+    <div className='user-login-background'>
+      <div className='user-login'>
+        <form action="">
+          <br />
+          <input type="email" placeholder='Enter your user email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
+          <br /><br />
+          <input type="password" placeholder='Enter your password' value={password} onChange={(e)=>{setPassword(e.target.value)}} />
+          <br /><br />
+          <button id='user-login-btn' onClick={login}>Login</button>
+          <p>New user ? click here to <Link to={'/userregister'}>Register</Link></p>
+          <Link to={'/adminlogin'}>AdminLogin</Link>
+        </form>
+      </div>
     </div>
   )
 }

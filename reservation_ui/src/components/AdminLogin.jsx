@@ -20,16 +20,18 @@ const AdminLogin = () => {
     e.preventDefault();
   }
   return (
-    <div className='admin-login'>
-      <form action="">
-        <br />
-        <input type="email" placeholder='Enter Admin email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-        <br /><br />
-        <input type="password" placeholder='Enter Admin password' value={password} onChange={(e)=>{setPassword(e.target.value)}} />
-        <br /><br />
-        <button id='admin-login-btn' onClick={login}>Login</button>
-        <p>Click here to register the <Link to={'/adminregister'}>Admin</Link></p>
-      </form>
+    <div className='admin-login-background'>
+      <div className='admin-login'>
+        <form action="">
+          <br />
+          <input type="email" placeholder='Enter Admin email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
+          <br /><br />
+          <input type="password" placeholder='Enter Admin password' value={password} onChange={(e)=>{setPassword(e.target.value)}} />
+          <br /><br />
+          <button id='admin-login-btn' onClick={login}>Login</button>
+          <p>Click here to register the <Link to={'/adminregister'}>Admin</Link></p>
+        </form>
+      </div>
     </div>
   )
 }

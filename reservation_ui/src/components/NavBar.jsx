@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className='navbar'>
       <div className="logo">
-      <h1 id='kvr'>KVR<span id='travels'>Travels</span></h1>
+        <h1 id='kvr'>KVR<span id='travels'>Travels</span></h1>
       </div>
       <div className="options">
         <Link to='/about'><InfoIcon id='mui1'/>About Us</Link>

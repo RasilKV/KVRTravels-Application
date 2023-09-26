@@ -25,7 +25,7 @@ let handleSubmit = (e)=>{
   e.preventDefault();
 }
   return (
-    <div className='notification'>
+    <div className='user-register-background'>
       <ToastContainer/>
       <div className='user-register'>
         <form action="">
