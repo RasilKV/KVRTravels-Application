@@ -25,24 +25,26 @@ let handleSubmit = (e)=>{
   e.preventDefault();
 }
   return (
-    <div className='user-register'>
+    <div className='notification'>
       <ToastContainer/>
-      <form action="">
-        <br />
-        <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} placeholder='Enter your name' />
-        <br /><br />
-        <input type="date" value={date} onChange={(e)=>{setDate(e.target.value)}} />
-        <br /><br />
-        <input type="tel" value={phone} pattern='[0-9]{10}' onChange={(e)=>{setPhone(e.target.value)}} placeholder='Enter your phone number' />
-        <br /><br />
-        <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter your email'/>
-        <br /><br />
-        <input type="tel" value={adhar} pattern='[0-9]{12}' onChange={(e)=>{setAdhar(e.target.value)}} placeholder='Enter your adhar number' />
-        <br /><br />
-        <input type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Enter your password' />
-        <br /><br />
-        <button id='user-register-btn' onClick={handleSubmit}>Register</button>
-      </form>
+      <div className='user-register'>
+        <form action="">
+          <br />
+          <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} placeholder='Enter your name' />
+          <br /><br />
+          <input type="date" value={date} onChange={(e)=>{setDate(e.target.value)}} />
+          <br /><br />
+          <input type="tel" value={phone} pattern='[0-9]{10}' onChange={(e)=>{setPhone(e.target.value)}} placeholder='Enter your phone number' />
+          <br /><br />
+          <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter your email'/>
+          <br /><br />
+          <input type="tel" value={adhar} pattern='[0-9]{12}' onChange={(e)=>{setAdhar(e.target.value)}} placeholder='Enter your adhar number' />
+          <br /><br />
+          <input type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Enter your password' />
+          <br /><br />
+          <button id='user-register-btn' onClick={handleSubmit}>Register</button>
+        </form>
+      </div>
     </div>
   )
 }
