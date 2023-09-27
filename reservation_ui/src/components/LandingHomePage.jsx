@@ -8,11 +8,13 @@ const LandingHomePage = () => {
   let [from, setFrom] = useState('')
   let [to, setTo] = useState('')
   let [dop, setDate] = useState('')
+  let [data, setData] = useState([])
 
   let search = (e)=>{
-    axios.get('http://localhost:8080/bus/filter')
+    axios.get(`http://localhost:8080/bus/filter?from=${from}&to=${to}&dop=${dop}`)
     .then((res)=>{
       console.log("success")
+      setData(res.data.data)
     })
     .catch((err)=>{
       console.log("invalid data")
@@ -28,6 +30,16 @@ const LandingHomePage = () => {
           <input type="date" value={dop} onChange={(e)=>{setDate(e.target.value)}}/>
           <button onClick={search}>Search</button>
         </form>
+      </div>
+
+      <div className="filtered-bus-lists">
+        {data.map((x)=>{
+          return(
+            <div className="buses">
+              <h1>{x.name}</h1>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
