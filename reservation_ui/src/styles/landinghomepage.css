@@ -1,25 +1,43 @@
+
 .form-bg-img{
-  background-image: url('https://image.lexica.art/full_jpg/ecf59b7d-798c-4000-b1e8-95b8c907d90f');
+  background-image: url('https://static.abhibus.com/web/media/backgrounds/search.20230915.webp');
   width:100% ;
-  height: 80vh;
+  height: 50vh;
   background-position: center;
-  background-size: cover;
-  background-position-y:-130px ;
+  background-size: contain;
+  background-position-y:center ;
   position: relative;
-  top: 1px;
-  
+  background-repeat: no-repeat;
+  top: -17px;
 }
-#form-bus-filter>input{
-  height: 60px;
+.from,
+.to{
+  height: 58px;
   width: 18rem;
   position: relative;
   top: 150px;
   left: 15%;
+  border: none;
+}
+.from{
+  border-top-left-radius: 12px;
+}
+.date{
+  height: 60px;
+  width: 18rem;
+  position: relative;
+  top: 150.5px;
+  left: 15%;
+  border: none;
 }
 #form-bus-filter>button{
   height: 60px;
   width: 12rem;
   position: relative;
   top: 150px;
-  left: 15%;
+  left: 15%; 
+  border: none;
+  border-bottom-right-radius: 12px;
+  background-color: #d74f57;
+  cursor: pointer;
 }

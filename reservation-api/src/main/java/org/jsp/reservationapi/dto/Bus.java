@@ -1,6 +1,7 @@
 package org.jsp.reservationapi.dto;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -35,6 +36,12 @@ public class Bus {
 	private LocalDate dop;
 	@Column(nullable = false, name = "number_of_seats")
 	private int nos;
+	@Column(nullable = false)
+	private LocalTime dep_time;
+	@Column(nullable = false)
+	private LocalTime arrive_time;
+	@Column(nullable = false)
+	private String img;
 	@ManyToOne
 	@JoinColumn(name = "admin_id")
 	@JsonIgnore

@@ -1,0 +1,16 @@
+.special_offer{
+  margin-left: 130px;
+}
+.flex-container{
+  display: flex;
+  position:relative;
+  padding-left: 130px; 
+ }
+ .flex-container>img{
+  box-sizing: border-box;
+  margin-right: 10px;
+  height: 170px;
+  width:350px;
+  border-radius: 15px;
+  cursor: pointer;
+ }

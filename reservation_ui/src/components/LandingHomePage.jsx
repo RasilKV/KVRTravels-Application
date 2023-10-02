@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../styles/landinghomepage.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import DashBoard from './DashBoard'
 
 const LandingHomePage = () => {
 
@@ -25,9 +26,9 @@ const LandingHomePage = () => {
     <div className='landing-home-page'>
       <div className="form-bg-img">
         <form action="" id='form-bus-filter'>
-          <input type="text" placeholder='from' value={from} onChange={(e)=>{setFrom(e.target.value)}} />
-          <input type="text" placeholder='to' value={to} onChange={(e)=>{setTo(e.target.value)}} />
-          <input type="date" value={dop} onChange={(e)=>{setDate(e.target.value)}}/>
+          <input className='from' type="text" placeholder='from' value={from} onChange={(e)=>{setFrom(e.target.value)}} />
+          <input className='to' type="text" placeholder='to' value={to} onChange={(e)=>{setTo(e.target.value)}} />
+          <input className='date' type="date" value={dop} onChange={(e)=>{setDate(e.target.value)}}/>
           <button onClick={search}>Search</button>
         </form>
       </div>
@@ -40,6 +41,10 @@ const LandingHomePage = () => {
             </div>
           )
         })}
+      </div>
+
+      <div>
+        <DashBoard/>
       </div>
     </div>
   )

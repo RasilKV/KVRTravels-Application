@@ -5,8 +5,11 @@
   text-align: center;
 }
 .admin-nav-links a{
-  margin: 0px 20px;
+  margin: 0px 30px;
+  position: relative;
+  top: 12px;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   font-size: large;
+  font-weight: bold
 }

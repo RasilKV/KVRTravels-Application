@@ -9,10 +9,10 @@ import HomePage from './components/HomePage';
 import UserRegister from './components/UserRegister';
 import AdminLogin from './components/AdminLogin';
 import AdminRegister from './components/AdminRegister';
-import LandingHomePage from './components/LandingHomePage';
 import AdminHomePage from './components/AdminHomePage';
 import Error from './components/Error';
 import Security from './components/Security';
+import UserHomePage from './components/UserHomePage';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Route path='/userregister' element={<UserRegister/>}></Route>
           <Route path='/adminlogin' element={<AdminLogin/>} />
           <Route path='/adminregister' element={<AdminRegister/>} />
-          <Route path='/landinguserhomepage' element={<LandingHomePage/>} />
+          <Route path='/userhomepage/*' element={<UserHomePage/>} />
           <Route path='/adminhomepage/*' element={<Security Child={AdminHomePage}/>}/>
           <Route path='/*' element={<Error/>} />
         </Routes>

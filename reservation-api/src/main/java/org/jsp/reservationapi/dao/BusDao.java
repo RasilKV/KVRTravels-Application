@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jsp.reservationapi.dto.Bus;
-import org.jsp.reservationapi.dto.User;
 import org.jsp.reservationapi.repository.BusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
