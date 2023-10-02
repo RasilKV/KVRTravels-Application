@@ -1,10 +1,10 @@
 .special_offer{
-  margin-left: 130px;
+  margin-left: 110px;
 }
 .flex-container{
   display: flex;
   position:relative;
-  padding-left: 130px; 
+  padding-left: 110px; 
  }
  .flex-container>img{
   box-sizing: border-box;
@@ -13,4 +13,49 @@
   width:350px;
   border-radius: 15px;
   cursor: pointer;
+ }
+ .prime{
+  height: 250px;
+  width: 100%;
+  /* transform: translate(500px, 50px); */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .prime img{
+  width: 29rem;
+  height: 12.8rem;
+ }
+ section{
+  height: 9.8rem;
+  width: 22rem;
+  padding: 0 1.2rem;
+  background-image: linear-gradient(to right, rgb(38, 72, 153), rgb(125, 70, 134));
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border-radius: 20px;
+  color: aliceblue;
+  /* margin-right: 20px; */
+ }
+ section img{
+  height: 80px;
+  width: 80px;
+  border: 10px;
+ }
+ section h3{
+  margin: 0;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 700;
+ }
+ .details{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 110px;
+  /* justify-content: space-evenly; */
  }

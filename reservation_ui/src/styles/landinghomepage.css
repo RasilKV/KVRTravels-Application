@@ -1,4 +1,6 @@
-
+.form-bg-img form{
+  display: flex;
+}
 .form-bg-img{
   background-image: url('https://static.abhibus.com/web/media/backgrounds/search.20230915.webp');
   width:100% ;
@@ -40,4 +42,83 @@
   border-bottom-right-radius: 12px;
   background-color: #d74f57;
   cursor: pointer;
+}
+.buses{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 20px;
+  margin: 10px;
+}
+@keyframes card_design {
+  from{transform: scale(.9);}
+  to{transform: scale(1);}
+}
+.buses img{
+  height: 90px;
+  /* animation-name: card_design;; */
+  /* animation-duration: 2s; */
+  /* animation-timing-function: ease-in-out; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  animation: card_design 2s ease-in-out infinite alternate ;
+}
+.buses h1{
+  font-size: 20px;
+}
+.buses h4{
+  font-weight: 500;
+}
+.buses p{
+  font-weight: bold;
+  position: relative; 
+  top: -10px;
+}
+#seats{
+  height: 30px;
+  width: 100px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  /* border-radius: 10px 0px 10px 0px; */
+  animation: seats 4s 2s ease-in-out alternate infinite;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+}
+@keyframes seats{
+  0%{
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+  }
+  100%{
+    border: none;
+    border-radius: 0px 20px 0px 20px;
+  }
+}
+.select-bus{
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  width: 100px;
+  background-color: green;
+  border: none;
+  color: white;
+  /* animation: select_bus 4s 2s ease-in-out alternate infinite; */
+  animation: select_bus 4s 2s ease-in-out infinite alternate ;
+}
+@keyframes select_bus{
+  0%{
+    /* border: none; */
+    transform: scale(.9);
+    /* border-radius: 15px 0px 15px 0px; */
+    /* margin-right: 10px; */
+  }
+  100%{
+    /* border: none; */
+    /* border-radius: 0px 15px 0px 15px; */
+    transform: scale(1);
+    /* margin-left: 10px; */
+  }
 }

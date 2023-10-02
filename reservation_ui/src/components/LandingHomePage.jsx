@@ -37,7 +37,16 @@ const LandingHomePage = () => {
         {data.map((x)=>{
           return(
             <div className="buses">
+              <img src="https://static.abhibus.com/busgallery/offerbanners/Apr2023/28/1682666896/OrangefcTravels.png" alt="" />
               <h1>{x.name}</h1>
+              <p>Depart at: <h4>{x.from}</h4></p>
+              <p>Date of Departure: <h4>{x.dop}</h4></p>
+              <p>Depart Time: <h4>{x.dep_time}</h4></p>
+              <p>Duration: <h4>5:15</h4></p>
+              <p>Arrive Time: <h4>{x.arrive_time}</h4></p>
+              <p>Destination: <h4>{x.to}</h4></p>
+              <p>Available Seats: <h4 id="seats">{x.nos}</h4></p>
+              <button className='select-bus'>Select Bus</button>
             </div>
           )
         })}
