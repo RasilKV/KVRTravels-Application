@@ -2,6 +2,8 @@ package org.jsp.reservationapi.dto;
 
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -24,6 +26,8 @@ public class Ticket {
 	private String seat_no;
 	@Column(nullable = false)
 	private double cost;
+	@CreationTimestamp
+	@Column(nullable = false)
 	private LocalDateTime time_of_booking;
 	@Column(nullable = false)
 	private int number_of_seats;

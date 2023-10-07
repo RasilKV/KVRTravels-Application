@@ -32,10 +32,11 @@
 }
 .add-bus button{
   border: none;
+  background-color: #d74f57;
   /* background-color: rgb(15, 241, 15); */
-  background-image: linear-gradient(to right, rgb(121, 229, 248), rgb(249, 23, 249));
+  /* background-image: linear-gradient(to right, rgb(121, 229, 248), rgb(249, 23, 249)); */
   width: 9rem;
   height: 2.5rem;
   border-radius: 6px;
-  color: black;
+  color: white;
 }

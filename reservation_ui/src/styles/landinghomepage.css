@@ -106,7 +106,7 @@
   border: none;
   color: white;
   /* animation: select_bus 4s 2s ease-in-out alternate infinite; */
-  animation: select_bus 4s 2s ease-in-out infinite alternate ;
+  animation: select_bus 3s 2s ease-in-out infinite alternate ;
 }
 @keyframes select_bus{
   0%{

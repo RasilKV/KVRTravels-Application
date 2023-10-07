@@ -1,5 +1,7 @@
 package org.jsp.reservationapi.dao;
 
+import java.util.Optional;
+
 import org.jsp.reservationapi.dto.Ticket;
 import org.jsp.reservationapi.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,18 @@ public class TicketDao {
 	
 	public Ticket saveTicket(Ticket ticket) {
 		return repository.save(ticket);
+	}
+	
+	public Ticket updateTicket(Ticket ticket) {
+		return repository.save(ticket);
+	}
+	
+	public void deleteTicket(Ticket ticket) {
+		repository.delete(ticket);
+	}
+	
+	public Optional<Ticket> findById(int id){
+		return repository.findById(id);
 	}
 
 }

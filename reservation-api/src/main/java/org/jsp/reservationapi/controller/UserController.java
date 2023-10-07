@@ -1,5 +1,7 @@
 package org.jsp.reservationapi.controller;
 
+import java.util.List;
+
 import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.dto.User;
 import org.jsp.reservationapi.service.UserService;
@@ -39,6 +41,11 @@ public class UserController {
 	@PostMapping(value = "/users/verify-by-email")
 	public ResponseEntity<ResponseStructure<User>> verifyUser(@RequestParam String email, @RequestParam String password){
 		return service.verifyUser(email, password);
+	}
+	
+	@GetMapping("/users")
+	public ResponseEntity<ResponseStructure<List<User>>> findAll(){
+		return service.findAll();
 	}
 
 }

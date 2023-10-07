@@ -3,6 +3,7 @@ import '../styles/landinghomepage.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import DashBoard from './DashBoard'
+import HomePage from './HomePage'
 
 const LandingHomePage = () => {
 
@@ -10,6 +11,7 @@ const LandingHomePage = () => {
   let [to, setTo] = useState('')
   let [dop, setDate] = useState('')
   let [data, setData] = useState([])
+  let navigate = useNavigate();
 
   let search = (e)=>{
     axios.get(`http://localhost:8080/bus/filter?from=${from}&to=${to}&dop=${dop}`)
@@ -46,7 +48,7 @@ const LandingHomePage = () => {
               <p>Arrive Time: <h4>{x.arrive_time}</h4></p>
               <p>Destination: <h4>{x.to}</h4></p>
               <p>Available Seats: <h4 id="seats">{x.nos}</h4></p>
-              <button className='select-bus'>Select Bus</button>
+              <button className='select-bus' onClick={()=>{navigate('/bookticket')}}>Select Bus</button>
             </div>
           )
         })}
@@ -54,6 +56,9 @@ const LandingHomePage = () => {
 
       <div>
         <DashBoard/>
+      </div>
+      <div>
+        <HomePage/>
       </div>
     </div>
   )

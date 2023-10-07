@@ -1,6 +1,7 @@
 package org.jsp.reservationapi.service;
 
 
+import java.util.List;
 import java.util.Optional;
 
 import org.jsp.reservationapi.dao.UserDao;
@@ -58,6 +59,14 @@ public class UserService {
 			return new ResponseEntity<ResponseStructure<User>>(structure, HttpStatus.OK);
 		}
 		throw new InvalidCredentialsException();
+	}
+	
+	public ResponseEntity<ResponseStructure<List<User>>> findAll(){
+		ResponseStructure<List<User>> structure = new ResponseStructure<>();
+		structure.setData(dao.findAll());
+		structure.setMessage("List of all users");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return new ResponseEntity<ResponseStructure<List<User>>>(structure, HttpStatus.OK);
 	}
 
 }

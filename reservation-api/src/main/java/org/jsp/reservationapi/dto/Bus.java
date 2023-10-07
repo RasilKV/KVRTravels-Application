@@ -42,6 +42,8 @@ public class Bus {
 	private LocalTime arrive_time;
 	@Column(nullable = false)
 	private String img;
+	@Column(nullable = false)
+	private double cost_per_seat;
 	@ManyToOne
 	@JoinColumn(name = "admin_id")
 	@JsonIgnore

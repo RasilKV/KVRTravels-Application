@@ -13,6 +13,8 @@ import AdminHomePage from './components/AdminHomePage';
 import Error from './components/Error';
 import Security from './components/Security';
 import UserHomePage from './components/UserHomePage';
+import BookTicket from './components/BookTicket';
+// import SendMail from './components/SendMail';
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path='/' element={<HomePage/>}></Route>
+          {/* <Route path='/' element={<SendMail/>}/> */}
           <Route path='/contact' element={<ContactUs/>}></Route>
           <Route path='/about' element={<AboutUs/>}></Route>
           <Route path='/userlogin' element={<UserLogin/>}></Route>
@@ -30,6 +33,7 @@ function App() {
           <Route path='/userhomepage/*' element={<UserHomePage/>} />
           <Route path='/adminhomepage/*' element={<Security Child={AdminHomePage}/>}/>
           <Route path='/*' element={<Error/>} />
+          <Route path='/bookticket' element={<BookTicket/>} />
         </Routes>
       </BrowserRouter>
       

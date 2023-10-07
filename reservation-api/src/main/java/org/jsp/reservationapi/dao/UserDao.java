@@ -1,5 +1,6 @@
 package org.jsp.reservationapi.dao;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.jsp.reservationapi.dto.User;
@@ -26,6 +27,10 @@ public class UserDao {
 	
 	public Optional<User> verifyUser(String email, String password){
 		return repoository.verifyUser(email, password);
+	}
+	
+	public List<User> findAll(){
+		return repoository.findAll();
 	}
 
 }
